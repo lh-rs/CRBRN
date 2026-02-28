@@ -26,7 +26,7 @@ class l2normalization(nn.Module):
         self.scale = scale
 
     def forward(self, x, dim=1):
-        '''out = scale * x / sqrt(\sum x_i^2)'''
+        #'''out = scale * x / sqrt(\sum x_i^2)'''
         #f = x.data.cpu().numpy()
         #scal = self.scale * x * x.pow(2).sum(dim).clamp(min=1e-12).rsqrt().expand_as(x)
         #sca = scal.data.cpu().numpy()
